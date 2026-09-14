@@ -1,0 +1,34 @@
+[project]
+name = "pytorch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "devendra-kashyap9", email = "dkashyap099@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "ipywidgets>=8.1.9",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "opencv-python>=5.0.0.93",
+    "pandas>=3.0.5",
+    "pillow>=12.3.0",
+    "plotly>=7.0.0",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "seaborn>=0.13.2",
+    "torch>=2.14.0",
+    "torchaudio>=2.11.0",
+    "torchvision>=0.29.0",
+    "tqdm>=4.70.1",
+]
+
+[project.scripts]
+pytorch = "pytorch:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
